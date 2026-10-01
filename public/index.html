@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="page.home">Beauty Store | Loja Virtual de Cosméticos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img class="brand-logo" src="img/logo.png" alt="Beauty Store" width="64" height="64"></a>
+      <p class="eyebrow" data-i18n="brand.title">Beauty Store | Loja Virtual de Cosméticos</p>
+      <button class="menu-toggle" type="button" data-menu-toggle data-i18n-aria-label="nav.open" aria-expanded="false">☰</button>
+      <nav class="nav-links" data-nav-links>
+        <a class="active" href="index.html" aria-current="page" data-i18n="nav.home">Início</a>
+        <a href="produtos.html" data-i18n="nav.products">Produtos</a>
+        <a href="index.html#destaques" data-i18n="nav.highlights">Destaques</a>
+        <a class="cart-link" href="carrinho.html"><span data-i18n="nav.cart">Carrinho</span> <span class="cart-count" data-cart-count>0</span></a>
+        <a href="login.html" data-i18n="nav.login">Login</a>
+        <select class="language-switch" data-language-switch aria-label="Idioma">
+          <option value="pt">PT</option>
+          <option value="en">EN</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow" data-i18n="home.heroEyebrow">Nova coleção 2026</p>
+        <h1 data-i18n="home.heroTitle">Beleza pronta para brilhar.</h1>
+        <p class="lead" data-i18n="home.heroBody">Maquiagens, perfumes e esmaltes selecionados para acompanhar seu estilo.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="produtos.html" data-i18n="home.products">Ver produtos</a>
+          <a class="btn btn-light" href="#destaques" data-i18n="home.highlights">Conhecer destaques</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="destaques" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-i18n="home.favorites">Favoritos</p>
+            <h2 data-i18n="home.featuredTitle">Destaques da loja</h2>
+            <p data-i18n="home.featuredBody">Descubra alguns dos produtos escolhidos para você.</p>
+          </div>
+          <a class="btn btn-outline" href="produtos.html" data-i18n="home.allProducts">Ver vitrine completa</a>
+        </div>
+        <div class="grid grid-3" data-featured></div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-head experience-intro">
+          <img class="experience-logo" src="img/logo.png" alt="Logo Beauty Store" width="180" height="180">
+          <div>
+            <p class="eyebrow" data-i18n="home.experience">Sua experiência</p>
+            <h2 data-i18n="home.experienceTitle">Comprar fica mais simples</h2>
+            <p data-i18n="home.experienceBody">Encontre seus favoritos, organize a sacola e confira seu pedido.</p>
+          </div>
+        </div>
+        <div class="grid grid-3">
+          <article class="card summary">
+            <h3 data-i18n="home.catalog">Catálogo selecionado</h3>
+            <p class="product-desc" data-i18n="home.catalogBody">Produtos de beleza organizados por categoria, com detalhes e preços.</p>
+          </article>
+          <article class="card summary">
+            <h3 data-i18n="home.easyCart">Carrinho prático</h3>
+            <p class="product-desc" data-i18n="home.easyCartBody">Ajuste quantidades e revise seus itens antes de continuar.</p>
+          </article>
+          <article class="card summary">
+            <h3 data-i18n="home.checkout">Checkout completo</h3>
+            <p class="product-desc" data-i18n="home.checkoutBody">Confira os dados de entrega e a forma de pagamento do pedido.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Beauty Store</h3>
+          <p data-i18n="footer.tagline">Produtos de beleza escolhidos para você.</p>
+        </div>
+        <div>
+          <h3 data-i18n="footer.navigation">Navegação</h3>
+          <p><a href="index.html" data-i18n="nav.home">Início</a></p>
+          <p><a href="produtos.html" data-i18n="nav.products">Produtos</a></p>
+          <p><a href="comprar.html?id=1" data-i18n="footer.buy">Comprar</a></p>
+        </div>
+        <div>
+          <h3 data-i18n="footer.purchase">Minha compra</h3>
+          <p><a href="carrinho.html" data-i18n="nav.cart">Carrinho</a></p>
+          <p><a href="checkout.html" data-i18n="footer.checkout">Checkout</a></p>
+          <p><a href="login.html" data-i18n="nav.login">Login</a></p>
+        </div>
+      </div>
+      <div class="copyright" data-i18n="footer.copyright">© 2026 Beauty Store. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.checkout-container{
+  padding:100px 20px;
+}
+
+.checkout-box{
+  max-width:900px;
+  margin:auto;
+  background:#fff;
+  border-radius:20px;
+  padding:40px;
+}
+
+.checkout-total{
+  font-size:1.5rem;
+  color:#ff1493;
+  font-weight:bold;
+}

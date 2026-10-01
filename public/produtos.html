@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="page.home">Beauty Store | Loja Virtual de Cosméticos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img class="brand-logo" src="img/logo.png" alt="Beauty Store" width="64" height="64"></a>
+      <p class="eyebrow" data-i18n="brand.title">Beauty Store | Loja Virtual de Cosméticos</p>
+      <button class="menu-toggle" type="button" data-menu-toggle data-i18n-aria-label="nav.open" aria-expanded="false">☰</button>
+      <nav class="nav-links" data-nav-links>
+        <a href="index.html" data-i18n="nav.home">Início</a>
+        <a class="active" href="produtos.html" aria-current="page" data-i18n="nav.products">Produtos</a>
+        <a href="index.html#destaques" data-i18n="nav.highlights">Destaques</a>
+        <a class="cart-link" href="carrinho.html"><span data-i18n="nav.cart">Carrinho</span> <span class="cart-count" data-cart-count>0</span></a>
+        <a href="login.html" data-i18n="nav.login">Login</a>
+        <select class="language-switch" data-language-switch aria-label="Idioma">
+          <option value="pt">PT</option>
+          <option value="en">EN</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <div class="container">
+        <p class="eyebrow" data-i18n="products.eyebrow">Vitrine</p>
+        <h1 data-i18n="products.title">Nossos produtos</h1>
+        <p data-i18n="products.body">Escolha por categoria e adicione seus favoritos ao carrinho.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters">
+          <button class="active" type="button" data-filter="all" data-i18n="filter.all">Todos</button>
+          <button type="button" data-filter="Bases" data-i18n="filter.bases">Bases</button>
+          <button type="button" data-filter="Batons" data-i18n="filter.lips">Batons</button>
+          <button type="button" data-filter="Olhos" data-i18n="filter.eyes">Olhos</button>
+          <button type="button" data-filter="Esmaltes" data-i18n="filter.nails">Esmaltes</button>
+          <button type="button" data-filter="Perfumes" data-i18n="filter.fragrance">Perfumes</button>
+        </div>
+        <div class="grid" data-products></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Beauty Store</h3>
+          <p data-i18n="footer.tagline">Produtos de beleza escolhidos para você.</p>
+        </div>
+        <div>
+          <h3 data-i18n="footer.navigation">Navegação</h3>
+          <p><a href="index.html" data-i18n="nav.home">Início</a></p>
+          <p><a href="produtos.html" data-i18n="nav.products">Produtos</a></p>
+          <p><a href="comprar.html?id=1" data-i18n="footer.buy">Comprar</a></p>
+        </div>
+        <div>
+          <h3 data-i18n="footer.purchase">Minha compra</h3>
+          <p><a href="carrinho.html" data-i18n="nav.cart">Carrinho</a></p>
+          <p><a href="checkout.html" data-i18n="footer.checkout">Checkout</a></p>
+          <p><a href="login.html" data-i18n="nav.login">Login</a></p>
+        </div>
+      </div>
+      <div class="copyright" data-i18n="footer.copyright">© 2026 Beauty Store. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

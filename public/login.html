@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="page.home">Beauty Store | Loja Virtual de Cosméticos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img class="brand-logo" src="img/logo.png" alt="Beauty Store" width="64" height="64"></a>
+      <p class="eyebrow" data-i18n="brand.title">Beauty Store | Loja Virtual de Cosméticos</p>
+      <button class="menu-toggle" type="button" data-menu-toggle data-i18n-aria-label="nav.open" aria-expanded="false">☰</button>
+      <nav class="nav-links" data-nav-links>
+        <a href="index.html" data-i18n="nav.home">Início</a>
+        <a href="produtos.html" data-i18n="nav.products">Produtos</a>
+        <a href="index.html#destaques" data-i18n="nav.highlights">Destaques</a>
+        <a class="cart-link" href="carrinho.html"><span data-i18n="nav.cart">Carrinho</span> <span class="cart-count" data-cart-count>0</span></a>
+        <a class="active" href="login.html" aria-current="page" data-i18n="nav.login">Login</a>
+        <select class="language-switch" data-language-switch aria-label="Idioma">
+          <option value="pt">PT</option>
+          <option value="en">EN</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container login-wrap">
+    <form class="card login-card" data-login-form>
+      <p class="eyebrow" data-i18n="login.account">Minha conta</p>
+      <h1 style="font-size: 2.5rem;" data-i18n="login.welcome">Bem-vinda de volta</h1>
+      <p class="product-desc" data-i18n="login.intro">Entre para acompanhar pedidos e continuar comprando.</p>
+
+      <div class="field" style="margin-top: 22px;">
+        <label for="email" data-i18n="checkout.email">E-mail</label>
+        <input id="email" name="email" type="email" placeholder="seuemail@exemplo.com" data-i18n-placeholder="login.emailPlaceholder" required>
+      </div>
+      <div class="field" style="margin-top: 14px;">
+        <label for="senha" data-i18n="login.password">Senha</label>
+        <input id="senha" name="senha" type="password" placeholder="Digite sua senha" data-i18n-placeholder="login.passwordPlaceholder" required>
+      </div>
+      <button class="btn btn-light" type="button" data-toggle-password style="margin-top: 12px;" data-i18n="login.showPassword">Mostrar senha</button>
+      <button class="btn btn-primary" type="submit" style="margin-top: 18px; width: 100%;" data-i18n="login.enter">Entrar</button>
+
+      <div class="divider" data-i18n="login.or">ou</div>
+      <p class="product-desc"><span data-i18n="login.new">Novo por aqui? Crie sua conta:</span> <a href="../app/controllers/register.php" data-i18n="login.register">Criar conta</a></p>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Beauty Store</h3>
+          <p data-i18n="footer.tagline">Produtos de beleza escolhidos para você.</p>
+        </div>
+        <div>
+          <h3 data-i18n="footer.navigation">Navegação</h3>
+          <p><a href="index.html" data-i18n="nav.home">Início</a></p>
+          <p><a href="produtos.html" data-i18n="nav.products">Produtos</a></p>
+          <p><a href="comprar.html?id=1" data-i18n="footer.buy">Comprar</a></p>
+        </div>
+        <div>
+          <h3 data-i18n="footer.purchase">Minha compra</h3>
+          <p><a href="carrinho.html" data-i18n="nav.cart">Carrinho</a></p>
+          <p><a href="checkout.html" data-i18n="footer.checkout">Checkout</a></p>
+          <p><a href="login.html" data-i18n="nav.login">Login</a></p>
+        </div>
+      </div>
+      <div class="copyright" data-i18n="footer.copyright">© 2026 Beauty Store. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
